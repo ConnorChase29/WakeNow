@@ -1,13 +1,19 @@
 import React from 'react';
+
 import {
 
   StyleSheet,
   Text,
   View,
   Image,
+  AppRegistry,
 
 } from 'react-native';
+
+//import { StackNavigator } from 'react-navigation';
+
 import LoginForm from '../src/components/LoginForm.js';
+
 
 export default class LoginScreen extends React.Component {
 
@@ -19,7 +25,9 @@ export default class LoginScreen extends React.Component {
 
         <Text style= { styles.loginScreenText }> WakeNow </Text>
 
-        <Text style= { styles.loginScreenText2 }> A powerful resource that can alter the habits of even the worst morning haters </Text>
+        <Text style= { styles.loginScreenText2 }> Create an account to get started </Text>
+
+        <Image style= { styles.profileImage } source= {{ uri: 'http://unsplash.it/100/100' }} />
 
         <LoginForm />
 
@@ -48,7 +56,7 @@ const styles = StyleSheet.create({
   loginScreenText: {
 
     fontSize: 40,
-    paddingTop: 100,
+    paddingTop: 50,
     textAlign: 'center',
     backgroundColor: 'rgba(0, 0, 0, 0)',
     color: 'white'
@@ -58,11 +66,20 @@ const styles = StyleSheet.create({
   loginScreenText2: {
 
     fontSize: 20,
-    paddingTop: 25,
-    paddingBottom: 50,
+    paddingTop: 20,
+    paddingBottom: 25,
     textAlign: 'center',
     backgroundColor: 'rgba(0, 0, 0, 0)',
     color: 'white'
+
+  },
+
+  profileImage: {
+
+    width: 100,
+    height: 100,
+    borderRadius: 50,
+    backgroundColor: 'grey',
 
   },
 
@@ -71,7 +88,7 @@ const styles = StyleSheet.create({
     flex: 1,
     width: 225,
     height: 225,
-    paddingTop: 275,
+    paddingTop: 230,
     resizeMode: 'contain',
 
   }

@@ -1,9 +1,27 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, TextInput, TouchableOpacity, Text, StatusBar } from 'react-native';
+
+import {
+
+	StyleSheet,
+	View,
+	TextInput,
+	TouchableOpacity,
+	Text,
+	StatusBar,
+	AppRegistry,
+
+} from 'react-native';
+
+import { StackNavigator } from 'react-navigation';
+
+//import HomeScreen from '../../screens/HomeScreen.js';
+
 
 export default class LoginForm extends Component {
-	
+
 	render () {
+
+		//const { navigate } = this.props.navigation;
 
 		return (
 
@@ -51,7 +69,7 @@ export default class LoginForm extends Component {
 
 					/>
 
-				<TouchableOpacity style= { styles.buttonContainer } >
+				<TouchableOpacity style= { styles.buttonContainer } onPress={() => navigate('Home') } >
 
 					<Text style= { styles.buttonText } >LOGIN</Text>
 

@@ -1,6 +1,20 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+
+import {
+
+  StyleSheet,
+  Text,
+  View,
+  Image,
+  AppRegistry
+
+} from 'react-native';
+
+//import { StackNavigator } from 'react-navigation';
+
 import LoginScreen from './screens/LoginScreen.js';
+
+//import HomeScreen from './screens/HomeScreen.js';
 
 export default class App extends React.Component {
 
@@ -19,6 +33,13 @@ export default class App extends React.Component {
   }
 
 }
+
+/*const WakeNow = StackNavigator({
+
+  Login: { screen: LoginScreen },
+  Home: { screen: HomeScreen },
+
+});*/
 
 const styles = StyleSheet.create({
 
