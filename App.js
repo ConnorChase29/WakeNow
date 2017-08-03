@@ -12,9 +12,9 @@ import {
 
 //import { StackNavigator } from 'react-navigation';
 
-import LoginScreen from './screens/LoginScreen.js';
+//import LoginScreen from './screens/LoginScreen.js';
 
-//import HomeScreen from './screens/HomeScreen.js';
+import HomeScreen from './screens/HomeScreen.js';
 
 export default class App extends React.Component {
 
@@ -24,7 +24,7 @@ export default class App extends React.Component {
 
       <View style={ styles.container }>
 
-        <LoginScreen />
+        <HomeScreen />
 
       </View>
 

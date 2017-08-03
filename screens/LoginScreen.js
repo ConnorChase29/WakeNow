@@ -23,7 +23,7 @@ export default class LoginScreen extends React.Component {
 
       <View style= { styles.container } >
 
-        <Text style= { styles.loginScreenText }> WakeNow </Text>
+        <Text style= { styles.loginScreenText } >WakeNow</Text>
 
         <Text style= { styles.loginScreenText2 }> Create an account to get started </Text>
 
