@@ -29,15 +29,11 @@ A helpful resource for people who hate waking up. The main feature of this appli
 
 * Must be backed by a MySQL or MongoDB Database with a Sequelize, Mongoose, or create your ORM.
 
-    - ``MySQL Database to store homes and data for charts + sequelize``
-
 * Must be deployed using Heroku (with Data)
 
 * Must utilize at least two libraries, packages, or technologies that we haven’t discussed or you haven't used.
-    - ``Chart NPM Package + ``
 
 * Require or involve authentication of users in some way (Custom, Passport, or library of somesort)
-    - ``Passport``
 
 * Must have a polished frontend / UI 
 
@@ -46,9 +42,8 @@ A helpful resource for people who hate waking up. The main feature of this appli
 * Must meet good quality coding standards (indentation, scoping, naming)
 
 * Idea(s) must be approved by Instructional Staff
-- What problem are solving?
-    - ``Creating a 'one stop shop' for investors to assess and manage properties``
 
+- What problem are you solving?
 - What value does your site/app bring?
 
 * Remember MVP
