@@ -53,8 +53,8 @@ A helpful resource for people who hate waking up. The main feature of this appli
 
 + Add multiple alarm sounds the user can choose from
 + Add an "Early Birds Chatroom" with [Socket.IO](https://socket.io/)
-+ Add a total word count to the user's statistics. Possibly offer rewards when the user reaches a certain word count.
-+ Add the number of times the user successfully WokeNow to the user's statistics.
++ Add a total word count to the user's statistics. Possibly offer rewards when the user reaches a certain word count
++ Add the number of times the user successfully WokeNow to the user's statistics
 + Add an average typing speed statistic to the user's profile page
-+ Add a leaderboard page for the most words typed, most alarm activities completed, and fastest typing speed.
++ Add a leaderboard page for the most words typed, most alarm activities completed, and fastest typing speed
 + Have dynamic wallpapers depending on what time of the day it is
