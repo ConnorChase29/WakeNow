@@ -1,6 +1,9 @@
 ## A powerful resource that can alter the habits of even the worst morning haters.
 
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://youtu.be/ZPzzdoCVekk)
+
+
 ![WakeNow](http://i.imgur.com/OvggMxn.png)
 
 ![WakeNow](http://i.imgur.com/u1AAg4X.png)
