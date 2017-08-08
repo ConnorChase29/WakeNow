@@ -1,89 +1,119 @@
 import React from 'react';
 
 import {
-
+  AppRegistry,
+  ScrollView,
+  View,
   StyleSheet,
   Text,
-  View,
+  TextInput,
   Image,
-  AppRegistry,
-
 } from 'react-native';
 
-//import { StackNavigator } from 'react-navigation';
+import { StackNavigator, TabNavigator } from 'react-navigation';
+
+import Clock from '../src/components/Clock.js';
+
+import LoginScreen from '../screens/LoginScreen.js';
+
+import ProfileScreen from '../screens/ProfileScreen.js';
 
 export default class HomeScreen extends React.Component {
-
   render() {
-
     return (
+      <ScrollView
+        automaticallyAdjustContentInsets={false}
+        scrollEventThrottle={200}
+        style={styles.scrollView}
+      >
+        <View style={styles.container}>
+          <Text style={styles.loginScreenText}>WakeNow</Text>
+          <Image
+            style={styles.profileImage}
+            source={{ uri: 'http://unsplash.it/100/100' }}
+          />
 
-      <View style= { styles.container } >
+          <Text style={styles.profileImageText}>Welcome, User</Text>
 
-        <Text style= { styles.loginScreenText } >WakeNow</Text>
-
-        <View style= { styles.hairline } />
-
-        <Image style= { styles.profileImage } source= {{ uri: 'http://unsplash.it/100/100' }} />
-
-        <Text style={ styles.profileImageText } >Welcome, User</Text>
-
-      </View>
-
+          <Clock />
+          <Text style={styles.paragraph}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </Text>
+          <TextInput
+            placeholderTextColor="rgba(255, 255, 255, 0.9)"
+            returnKeyType="go"
+            onSubmitEditing={() => this.passwordInput.focus()}
+            keyboardType="ascii-capable"
+            autoCapitalize={'none'}
+            autoCorrect={false}
+            multiline={true}
+            style={styles.input}
+          />
+          <Text style={styles.wordcount}>/50 characters</Text>
+        </View>
+      </ScrollView>
     );
-
   }
-
 }
 
 const styles = StyleSheet.create({
-
-  container: {
-
+  scrollView: {
     flex: 1,
-    justifyContent: 'flex-start',
-    alignItems: 'center',
     backgroundColor: '#3498db',
-    width: 400,
-
+    alignSelf: 'stretch',
+  },
+  container: {
+    alignItems: 'center',
   },
 
   loginScreenText: {
-
     fontSize: 40,
     paddingVertical: 50,
     textAlign: 'center',
     backgroundColor: 'rgba(0, 0, 0, 0)',
     color: 'white',
-
-  },
-
-  hairline: {
-
-    height: 1,
-    alignSelf: 'stretch',
-    alignItems: 'center',
-    marginBottom: 50,
-    backgroundColor: 'white',
-
   },
 
   profileImage: {
-
     width: 100,
     height: 100,
     borderRadius: 50,
     backgroundColor: 'grey',
-
   },
 
   profileImageText: {
-
     paddingTop: 10,
+    paddingBottom: 30,
     textAlign: 'center',
     backgroundColor: 'rgba(0, 0, 0, 0)',
     color: 'white',
-
   },
 
-  });
+  paragraph: {
+    textAlign: 'center',
+    marginTop: 20,
+    backgroundColor: 'transparent',
+    color: 'white',
+  },
+  input: {
+    height: 75,
+    width: 350,
+    backgroundColor: 'rgba(255, 255, 255, 0.2)',
+    marginTop: 20,
+    color: '#FFF',
+  },
+  wordcount: {
+    paddingTop: 5,
+    paddingBottom: 30,
+    marginLeft: 250,
+    textAlign: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0)',
+    color: '#ecf0f1',
+  },
+});

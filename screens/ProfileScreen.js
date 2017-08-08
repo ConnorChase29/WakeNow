@@ -4,17 +4,15 @@ import { AppRegistry, View, StyleSheet, Text } from 'react-native';
 
 import { StackNavigator, TabNavigator } from 'react-navigation';
 
-import LoginScreen from './screens/LoginScreen.js';
+import LoginScreen from '../screens/LoginScreen.js';
 
-import HomeScreen from './screens/HomeScreen.js';
+import HomeScreen from '../screens/HomeScreen.js';
 
-import ProfileScreen from './screens/ProfileScreen.js';
-
-export default class App extends React.Component {
+export default class ProfileScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <LoginScreen />
+        <Text>Hello World!</Text>
       </View>
     );
   }
@@ -23,8 +21,5 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
