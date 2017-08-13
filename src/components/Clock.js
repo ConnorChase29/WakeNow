@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { AppRegistry, View, Text, StyleSheet, StatusBar } from 'react-native';
+import { View, Text, StyleSheet, StatusBar } from 'react-native';
 
 import moment from 'moment';
 

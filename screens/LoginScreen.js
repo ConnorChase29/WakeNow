@@ -9,38 +9,32 @@ export default class LoginScreen extends React.Component {
   };
   render() {
     return (
-      <ScrollView style={styles.scrollView}>
-        <View style={styles.container}>
-          <Text style={styles.loginScreenText}>WakeNow</Text>
+      <View style={styles.container}>
+        <Text style={styles.loginScreenText}>WakeNow</Text>
 
-          <Text style={styles.loginScreenText2}>
-            Create an account to get started
-          </Text>
+        <Text style={styles.loginScreenText2}>
+          Create an account to get started
+        </Text>
 
-          <Image
-            style={styles.profileImage}
-            source={{ uri: 'http://unsplash.it/100/100' }}
-          />
+        <Image
+          style={styles.profileImage}
+          source={{ uri: 'http://unsplash.it/100/100' }}
+        />
 
-          <LoginForm onSubmit={() => this.props.navigation.navigate('Home')} />
+        <LoginForm onSubmit={() => this.props.navigation.navigate('Home')} />
 
-          <Image
-            style={styles.reactImage}
-            source={require('../assets/react-logo.png')}
-          />
-        </View>
-      </ScrollView>
+        <Image
+          style={styles.reactImage}
+          source={require('../assets/react-logo.png')}
+        />
+      </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  scrollView: {
-    flex: 1,
-    backgroundColor: '#3498db',
-    alignSelf: 'stretch',
-  },
   container: {
+    flex: 1,
     alignItems: 'center',
   },
 
@@ -72,7 +66,6 @@ const styles = StyleSheet.create({
     flex: 1,
     width: 225,
     height: 225,
-    paddingTop: 230,
     resizeMode: 'contain',
   },
 });

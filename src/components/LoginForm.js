@@ -38,13 +38,12 @@ export default class LoginForm extends Component {
 					ref={input => (this.passwordInput = input)}
 				/>
 
-				<Button
+				<TouchableOpacity
 					style={styles.buttonContainer}
-					title="LOGIN"
 					onPress={this.props.onSubmit}
 				>
-					{/*<Text style={styles.buttonText}>LOGIN</Text>*/}
-				</Button>
+					<Text style={styles.buttonText}>LOGIN</Text>
+				</TouchableOpacity>
 			</View>
 		);
 	}
@@ -52,6 +51,7 @@ export default class LoginForm extends Component {
 
 const styles = StyleSheet.create({
 	container: {
+		flex: 1,
 		padding: 20,
 	},
 
@@ -65,8 +65,9 @@ const styles = StyleSheet.create({
 	},
 
 	buttonContainer: {
+		height: 45,
 		backgroundColor: '#2980b9',
-		paddingVertical: 15,
+		paddingTop: 15,
 	},
 
 	buttonText: {
