@@ -18,6 +18,9 @@ import HomeScreen from '../screens/HomeScreen.js';
 import ProfileScreen from '../screens/ProfileScreen.js';
 
 export default class LoginScreen extends React.Component {
+  static navigationOptions = {
+    headerMode: 'none',
+  };
   render() {
     return (
       <ScrollView style={styles.scrollView}>
@@ -33,7 +36,7 @@ export default class LoginScreen extends React.Component {
             source={{ uri: 'http://unsplash.it/100/100' }}
           />
 
-          <LoginForm />
+          <LoginForm onSubmit={() => this.props.navigation.navigate('Home')} />
 
           <Image
             style={styles.reactImage}
@@ -45,18 +48,12 @@ export default class LoginScreen extends React.Component {
   }
 }
 
-/*const HomeStack = StackNavigator({
+const AppNavigation = StackNavigator({
+  Login: { screen: LoginScreen },
   Home: { screen: HomeScreen },
 });
 
-const ProfileStack = StackNavigator({
-  Profile: { screen: ProfileScreen },
-});
-
-const AppNavigation = TabNavigator({
-  Home: { screen: HomeStack },
-  Profile: { screen: ProfileStack },
-});*/
+AppRegistry.registerComponent('AppNavigation', () => <AppNavigation />);
 
 const styles = StyleSheet.create({
   scrollView: {

@@ -8,16 +8,17 @@ import {
 	StatusBar,
 	TextInput,
 	TouchableOpacity,
+	Button,
 } from 'react-native';
 
-//import { StackNavigator } from 'react-navigation';
+import { StackNavigator, TabNavigator } from 'react-navigation';
 
-//import HomeScreen from '../../screens/HomeScreen.js';
+import LoginScreen from '../../screens/LoginScreen.js';
+
+import HomeScreen from '../../screens/HomeScreen.js';
 
 export default class LoginForm extends Component {
 	render() {
-		//const { navigate } = this.props.navigation;
-
 		return (
 			<View style={styles.container}>
 				<StatusBar barStyle="light-content" />
@@ -42,12 +43,13 @@ export default class LoginForm extends Component {
 					ref={input => (this.passwordInput = input)}
 				/>
 
-				<TouchableOpacity
+				<Button
 					style={styles.buttonContainer}
-					onPress={() => navigate('Home')}
+					title="LOGIN"
+					onPress={this.props.onSubmit}
 				>
-					<Text style={styles.buttonText}>LOGIN</Text>
-				</TouchableOpacity>
+					{/*<Text style={styles.buttonText}>LOGIN</Text>*/}
+				</Button>
 			</View>
 		);
 	}
