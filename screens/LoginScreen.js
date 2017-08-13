@@ -1,21 +1,7 @@
 import React from 'react';
-
-import {
-  AppRegistry,
-  View,
-  ScrollView,
-  StyleSheet,
-  Text,
-  Image,
-} from 'react-native';
-
-import { StackNavigator, TabNavigator } from 'react-navigation';
+import { View, ScrollView, StyleSheet, Text, Image } from 'react-native';
 
 import LoginForm from '../src/components/LoginForm.js';
-
-import HomeScreen from '../screens/HomeScreen.js';
-
-import ProfileScreen from '../screens/ProfileScreen.js';
 
 export default class LoginScreen extends React.Component {
   static navigationOptions = {
@@ -47,13 +33,6 @@ export default class LoginScreen extends React.Component {
     );
   }
 }
-
-const AppNavigation = StackNavigator({
-  Login: { screen: LoginScreen },
-  Home: { screen: HomeScreen },
-});
-
-AppRegistry.registerComponent('AppNavigation', () => <AppNavigation />);
 
 const styles = StyleSheet.create({
   scrollView: {

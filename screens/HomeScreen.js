@@ -1,7 +1,6 @@
 import React from 'react';
 
 import {
-  AppRegistry,
   ScrollView,
   View,
   StyleSheet,
@@ -13,10 +12,6 @@ import {
 import { StackNavigator, TabNavigator } from 'react-navigation';
 
 import Clock from '../src/components/Clock.js';
-
-import LoginScreen from '../screens/LoginScreen.js';
-
-import ProfileScreen from '../screens/ProfileScreen.js';
 
 export default class HomeScreen extends React.Component {
   render() {
@@ -61,7 +56,6 @@ export default class HomeScreen extends React.Component {
     );
   }
 }
-
 
 const styles = StyleSheet.create({
   scrollView: {

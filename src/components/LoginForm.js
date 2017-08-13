@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import {
-	AppRegistry,
 	View,
 	StyleSheet,
 	Text,
@@ -12,10 +11,6 @@ import {
 } from 'react-native';
 
 import { StackNavigator, TabNavigator } from 'react-navigation';
-
-import LoginScreen from '../../screens/LoginScreen.js';
-
-import HomeScreen from '../../screens/HomeScreen.js';
 
 export default class LoginForm extends Component {
 	render() {
