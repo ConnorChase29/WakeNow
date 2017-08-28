@@ -7,6 +7,7 @@ import {
   Text,
   TextInput,
   Image,
+  StatusBar,
 } from 'react-native';
 
 import { StackNavigator, TabNavigator } from 'react-navigation';
@@ -14,14 +15,19 @@ import { StackNavigator, TabNavigator } from 'react-navigation';
 import Clock from '../src/components/Clock.js';
 
 export default class HomeScreen extends React.Component {
+  static navigationOptions = {
+    title: 'Home',
+    headerStyle: {
+      backgroundColor: '#60bfff',
+    },
+    headerTintColor: 'white',
+    gesturesEnabled: true,
+  };
   render() {
     return (
-      <ScrollView
-        automaticallyAdjustContentInsets={false}
-        scrollEventThrottle={200}
-        style={styles.scrollView}
-      >
+      <ScrollView>
         <View style={styles.container}>
+          <StatusBar barStyle="dark-content" />
           <Text style={styles.loginScreenText}>WakeNow</Text>
           <Image
             style={styles.profileImage}
@@ -58,13 +64,11 @@ export default class HomeScreen extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  scrollView: {
+  container: {
     flex: 1,
     backgroundColor: '#3498db',
-    alignSelf: 'stretch',
-  },
-  container: {
     alignItems: 'center',
+    alignSelf: 'stretch',
   },
 
   loginScreenText: {

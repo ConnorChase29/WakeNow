@@ -5,7 +5,12 @@ import LoginForm from '../src/components/LoginForm.js';
 
 export default class LoginScreen extends React.Component {
   static navigationOptions = {
-    headerMode: 'none',
+    title: 'Welcome',
+    headerStyle: {
+      backgroundColor: '#60bfff',
+    },
+    headerTintColor: 'white',
+    gesturesEnabled: true,
   };
   render() {
     return (
@@ -35,6 +40,7 @@ export default class LoginScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: '#3498db',
     alignItems: 'center',
   },
 
